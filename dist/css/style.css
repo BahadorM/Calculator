@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#239ccc), to(#b5dfd3));
+  background: linear-gradient(#239ccc, #b5dfd3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: minmax(120px, auto) (80px)[5];
+      grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background: #1f2b27;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-output {
+  margin: 20px 10px;
+  color: #919a9e;
+}
+
+.current-output {
+  margin: 0px 10px 0px 10px;
+  color: #e9f5fa;
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */
